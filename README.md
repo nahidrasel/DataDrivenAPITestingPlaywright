@@ -43,3 +43,33 @@ Generate or validate tests directly from Swagger/OpenAPI definitions.
 
 🕵️‍♂️ Headless UI/API Hybrid Support
 Run UI & API tests in sync using Playwright's headless browser mode.
+
+
+## Running Tests
+
+### 1. **Common Commands**
+
+- **Run the tests locally using Playwright**:
+  
+  ```bash
+  npx playwright test
+
+### 2. **Running Tests with Docker**
+
+To run the tests inside a Docker container, follow these steps:
+
+1. **Build the Docker image:**
+
+   Build the Docker image using the following command:
+
+   ```bash
+   docker build -t playwright-api-test .
+  
+
+2. **Run the tests in the container:**
+
+   After building the image, run the tests inside the container with the following command:
+
+   ```bash
+   docker run --rm playwright-api-test
+  
