@@ -1,0 +1,5 @@
+/.dockerignore
+/allure-results
+/docker-compose.yml
+/Dockerfile
+/node_modules
