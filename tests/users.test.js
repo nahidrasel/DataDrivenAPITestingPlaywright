@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 const usersFilePath = path.resolve(__dirname, '../testdata/users.json');
 const userData = JSON.parse(readFileSync(usersFilePath, 'utf-8'));
 
-test.describe('API: User Creation - ReqRes Demo (Custom Framework)', () => {
+test.describe(' User Creation ', () => {
   for (const user of userData) {
     test(`Create user → ${user.name}`, async ({ request }) => {
       if (!user.name || !user.job) {
